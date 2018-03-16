@@ -11,3 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Intro.unity
     guid: 72af4514f5c1a3a4eb2f6f5847f60636
+  - enabled: 1
+    path: Assets/test.unity
+    guid: 00c42449109674d46a6d7c8b4aa86a3f
+  - enabled: 1
+    path: Assets/mapScreenUI.unity
+    guid: 7eec18ea8f58d0844b8c811ee58c3318
