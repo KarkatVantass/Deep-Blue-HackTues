@@ -16,7 +16,10 @@ public class Chest : MonoBehaviour {
     void Update () {
 
         bool isInRange;
-
+        if(character == null)
+        {
+            return;
+        }
         if (
             character.transform.position.y < (this.transform.position.y + interactionRadius)
             && character.transform.position.y > (this.transform.position.y - interactionRadius)

@@ -27,11 +27,6 @@ public class Combat : MonoBehaviour {
         {
             Attack();
         }
-        else
-        {
-            Debug.Log(Time.time);
-            Debug.Log(LastTime);
-        }
 	}
     void Attack()
     {
@@ -40,9 +35,12 @@ public class Combat : MonoBehaviour {
         Collider2D[] enemies = Physics2D.OverlapCircleAll(this.transform.position, attackRange);
         foreach(var enemy in enemies.Where(x => x.gameObject.tag == "Enemy"))
         {
-            GameObject target = enemy.gameObject;
-
-            target.GetComponent<Enemy>().TakeDmg(attackDmg);
+            enemy.gameObject.GetComponent<Enemy>().TakeDmg(attackDmg);
         }
+    }
+
+    public void TakeDmg(float dmg)
+    {
+        hitPoints -= dmg;
     }
 }
