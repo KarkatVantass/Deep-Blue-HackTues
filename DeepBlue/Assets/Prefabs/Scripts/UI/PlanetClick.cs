@@ -5,18 +5,31 @@ using UnityEngine;
 public class PlanetClick : MonoBehaviour {
 
     private GameObject ship;
-    public float speed;
+    public float speed = 10;
     public Transform target;
     private bool atDest = false;
+    public Vector3 middle;
+
+    public void Start()
+    {
+        this.atDest = true;
+    }
 
     void Update()
     {
-        if (ship.transform.position != target.transform.position && atDest == false)
+        if (atDest == false)
         {
-            ship.transform.position = Vector2.MoveTowards(ship.transform.position, target.transform.position, 30*Time.deltaTime);
-        }else if(ship.transform.position != target.transform.position)
-        {
-            atDest = true;
+            if (ship.transform.position != target.transform.position)
+            {
+
+                ship.transform.position = Vector2.MoveTowards(ship.transform.position, target.transform.position, speed * Time.deltaTime);
+                speed = Mathf.Lerp(speed, speed + 30, 0.07f);
+            }
+            else if (ship.transform.position == target.transform.position)
+            {
+                atDest = true;
+                speed = 10;
+            }
         }
     }
 
@@ -25,5 +38,6 @@ public class PlanetClick : MonoBehaviour {
         atDest = false;
         this.ship = GameObject.Find("ship");
         this.target = gameObject.transform;
+        this.middle = (ship.transform.position - target.transform.position) / 2;
     }
 }
