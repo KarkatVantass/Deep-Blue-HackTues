@@ -22,15 +22,18 @@ public class PlanetClick : MonoBehaviour {
     {
         if (atDest == false)
         {
+            
             if (ship.transform.position != target.transform.position)
             {
+                Debug.Log("mpx = " + this.transform.position.x + "tpx" + target.transform.position.x );
+                 Debug.Log("mpy = " + this.transform.position.y + "tpy" + target.transform.position.y );
 
                 ship.transform.position = Vector2.MoveTowards(ship.transform.position, target.transform.position, speed * Time.deltaTime);
                 speed = Mathf.Lerp(speed, speed + 30, 0.07f);
             }
             else if (ship.transform.position == target.transform.position)
             {
-                Debug.Log("at dest");
+                Debug.Log(sceneIndex);
                 atDest = true;
                 speed = 10;
                 changeButtonInteraction(true);
@@ -47,11 +50,14 @@ public class PlanetClick : MonoBehaviour {
         this.target = gameObject.transform;
         this.middle = (ship.transform.position - target.transform.position) / 2;
         this.sceneIndex = index;
+
+        
         changeButtonInteraction(false);
         
     }
     private void changeButtonInteraction(bool state)
     {
+       // Debug.Log(sceneIndex);
         foreach (var i in FindObjectsOfType<Button>())
         {
             i.interactable = state;
