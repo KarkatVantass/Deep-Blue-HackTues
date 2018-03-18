@@ -21,20 +21,24 @@ public class MovementScript : MonoBehaviour {
         sprite = this.GetComponentInChildren<SpriteRenderer>();
     }
 
-    void FixedUpdate()
+    private void Update()
     {
-        var horizontalMovement = Input.GetAxis("Horizontal") * Time.fixedDeltaTime * totalSpeed;
-
         if (Input.GetKeyDown(KeyCode.A) && !sprite.flipX)
         {
             sprite.flipX = true;
             Debug.Log("turn left");
-        }else if(Input.GetKeyDown(KeyCode.D) && sprite.flipX)
+        }
+        else if (Input.GetKeyDown(KeyCode.D) && sprite.flipX)
         {
 
             Debug.Log("turn right");
             sprite.flipX = false;
         }
+    }
+
+    void FixedUpdate()
+    {
+        var horizontalMovement = Input.GetAxis("Horizontal") * Time.fixedDeltaTime * totalSpeed;
 
         if((Input.GetAxis("Vertical") != 0)
             && isGrounded == true)
