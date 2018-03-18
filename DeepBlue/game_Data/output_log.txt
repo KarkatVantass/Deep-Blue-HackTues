@@ -7,25 +7,20 @@ Direct3D:
     VRAM:     1004 MB
     Driver:   15.300.1025.1001
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\DeepBlue\DeepBlue\game_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\DeepBlue\DeepBlue\game_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\DeepBlue\DeepBlue\game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading D:\DeepBlue\DeepBlue\game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: D:\DeepBlue\DeepBlue\game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\DeepBlue\DeepBlue\game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\DeepBlue\DeepBlue\game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\DeepBlue\DeepBlue\game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: D:\DeepBlue\DeepBlue\game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading D:\DeepBlue\DeepBlue\game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: D:\DeepBlue\DeepBlue\game_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
-Loading D:\DeepBlue\DeepBlue\game_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
-Platform assembly: D:\DeepBlue\DeepBlue\game_Data\Managed\System.dll (this message is harmless)
-Platform assembly: D:\DeepBlue\DeepBlue\game_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.027 seconds
+Platform assembly: I:\deepBlue\DeepBlue\game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading I:\deepBlue\DeepBlue\game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: I:\deepBlue\DeepBlue\game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading I:\deepBlue\DeepBlue\game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: I:\deepBlue\DeepBlue\game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading I:\deepBlue\DeepBlue\game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: I:\deepBlue\DeepBlue\game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading I:\deepBlue\DeepBlue\game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: I:\deepBlue\DeepBlue\game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading I:\deepBlue\DeepBlue\game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: I:\deepBlue\DeepBlue\game_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading I:\deepBlue\DeepBlue\game_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: I:\deepBlue\DeepBlue\game_Data\Managed\System.dll (this message is harmless)
+Platform assembly: I:\deepBlue\DeepBlue\game_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.235 seconds
 <RI> Initializing input.
 <RI> Input initialized.
-<RI> Initialized touch support.
-UnloadTime: 1.396455 ms
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 4c4 -> priority: 1 
-  Thread -> id: 1c90 -> priority: 1 
