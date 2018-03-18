@@ -3836,9 +3836,24 @@ Prefab:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 114874909938453114, guid: e856d8036774a7345a6c04c255b43281,
+        type: 2}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 615858873}
+    - target: {fileID: 212032354903239300, guid: e856d8036774a7345a6c04c255b43281,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e856d8036774a7345a6c04c255b43281, type: 2}
   m_IsPrefabParent: 0
+--- !u!212 &615858873 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212032354903239300, guid: e856d8036774a7345a6c04c255b43281,
+    type: 2}
+  m_PrefabInternal: {fileID: 615858872}
 --- !u!1 &616190153
 GameObject:
   m_ObjectHideFlags: 0
@@ -6385,8 +6400,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.4149247, y: 1.2213491}
-  m_Size: {x: 118.07603, y: 209.67683}
+  m_Offset: {x: 1.4149246, y: -3.0915666}
+  m_Size: {x: 118.07603, y: 218.30267}
   m_Direction: 0
 --- !u!50 &902661206
 Rigidbody2D:
@@ -6399,7 +6414,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 18973.574
+  m_Mass: 19861.418
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 100
